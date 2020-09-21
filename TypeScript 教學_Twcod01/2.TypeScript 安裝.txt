@@ -1,0 +1,24 @@
+如果你的本地環境已經安裝了 npm 工具，可以使用以下指令來安裝：
+
+npm install -g typescript
+安裝完成後我們可以使用 tsc 指令來執行 TypeScript 的相關程式碼，以下是檢視版本號：
+
+$ tsc -v
+
+然後我們新建一個 test.ts 的檔案，程式碼如下：
+
+var message:string = "Hello World" 
+console.log(message)
+通常我們使用 .ts 作為 TypeScript 程式碼檔案的副檔名。
+
+然後執行以下指令將 TypeScript 轉換為 JavaScript 程式碼：
+
+tsc test.ts
+這時候再當前目錄下（與 test.ts 同一目錄）就會生成一個 test.js 檔案，程式碼如下：
+
+var message = "Hello World";
+console.log(message);
+使用 node 指令來執行 test.js 檔案：
+
+$ node test.js 
+Hello World
